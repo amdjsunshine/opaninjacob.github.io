@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document Viewer</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #111;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+
+    .download-btn {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        background: #ffffff;
+        color: #000;
+        padding: 8px 14px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .download-btn:hover {
+        background: #eaeaea;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+</style>
+</head>
+
+<body>
+
+<a href="OPANINJACOB.pdf" download class="download-btn">
+    Download
+</a>
+
+<iframe src="OPANINJACOB.pdf"></iframe>
+
+</body>
+</html>
