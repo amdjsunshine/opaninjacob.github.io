@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OPANINJACOB Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .header {
+            width: 100%;
+            padding: 15px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .download-btn {
+            background: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background: #e05500;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: calc(100vh - 60px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="OPANINJACOB.pdf" download class="download-btn">
+            Download PDF
+        </a>
+    </div>
+
+    <div class="pdf-container">
+        <iframe 
+        src="https://docs.google.com/gview?url=https://https://github.com/amdjsunshine/opaninjacob/OPANINJACOB.pdf&embedded=true">
+        </iframe>
+    </div>
+
+</body>
+</html>
